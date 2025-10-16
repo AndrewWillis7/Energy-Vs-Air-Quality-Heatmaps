@@ -1,1 +1,3 @@
-API_KEY = 0; # fill in with current key, dont push to Github dum dum
+with open("./API_KEY_INPUT.txt", "r") as f:
+    API_KEY = f.read().strip()
+    print(API_KEY);
